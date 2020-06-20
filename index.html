@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Duckling in VR</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="js/aframe-orbit-controls.min.js"></script>
+
+
+
+
+</head>
+<body>
+<a-scene >
+	<a-entity  
+		rotation="0 180 0" 
+		scale="1.2 1.2 1.2" 
+		position="0 0 0" 
+		obj-model="obj: url(models/duckling.obj); mtl: url(models/duckling.mtl)">
+	</a-entity>
+	<a-entity sound="src: #sound" autoplay="false"></a-entity>
+<a-entity camera look-controls="enabled: false" orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 10 20"></a-entity>
+</a-scene>
+</body>
+</html>
